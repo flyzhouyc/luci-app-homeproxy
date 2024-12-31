@@ -10,7 +10,7 @@ on:
       - 'po/**'
       - 'root/**'
       - 'Makefile'
-      - '.github/**'
+      - '.github/*'
 
   pull_request:
     branches:
@@ -24,7 +24,7 @@ on:
       - 'htdocs/**'
       - 'root/**'
       - 'Makefile'
-      - '.github/**'
+      - '.github/*'
     workflow_dispatch:  # 添加手动触发的支持
 
 
