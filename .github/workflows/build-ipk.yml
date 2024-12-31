@@ -29,9 +29,6 @@ on:
     
 
 
-  release:
-    types:
-      - published
 
 jobs:
   build:
@@ -57,10 +54,7 @@ jobs:
           name: ${{ env.ASSET_NAME }}
           path: .github/*.ipk
 
-      - name: Publishing to GitHub Releases
-        uses: svenstaro/upload-release-action@v2
-        if: github.event_name == 'release'
-        with:
+    
          
           file: .github/*.ipk
           tag: ${{ github.ref }}
